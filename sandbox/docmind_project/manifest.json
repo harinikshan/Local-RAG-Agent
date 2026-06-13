@@ -1,0 +1,257 @@
+[
+  {
+    "doc_id": "AGENTS",
+    "rel_path": "AGENTS.md",
+    "chunks": 1
+  },
+  {
+    "doc_id": "APCO_BEEI_Complete_Submission_Guide",
+    "rel_path": "APCO_BEEI_Complete_Submission_Guide.pdf",
+    "chunks": 13
+  },
+  {
+    "doc_id": "APCO_Complete_Publication_Guide_CORRECTED",
+    "rel_path": "APCO_Complete_Publication_Guide_CORRECTED.pdf",
+    "chunks": 8
+  },
+  {
+    "doc_id": "APCO_Journal_Selection_Guide",
+    "rel_path": "APCO_Journal_Selection_Guide.pdf",
+    "chunks": 15
+  },
+  {
+    "doc_id": "APCO_Paper_BEEI_Review_Report",
+    "rel_path": "APCO_Paper_BEEI_Review_Report.pdf",
+    "chunks": 8
+  },
+  {
+    "doc_id": "APCO_PhD_Companion_Guide",
+    "rel_path": "APCO_PhD_Companion_Guide.pdf",
+    "chunks": 13
+  },
+  {
+    "doc_id": "APCO_Telkomnika_Submission_Guide",
+    "rel_path": "APCO_Telkomnika_Submission_Guide.pdf",
+    "chunks": 10
+  },
+  {
+    "doc_id": "DocuMind_Application_User_Guide",
+    "rel_path": "DocuMind_Application_User_Guide.pdf",
+    "chunks": 12
+  },
+  {
+    "doc_id": "Paper1_Complete_File_Map",
+    "rel_path": "Paper1_Complete_File_Map.pdf",
+    "chunks": 4
+  },
+  {
+    "doc_id": "README",
+    "rel_path": "README.md",
+    "chunks": 1
+  },
+  {
+    "doc_id": "HRD002",
+    "rel_path": "datasets/paper1/hard/HRD002.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "HRD003",
+    "rel_path": "datasets/paper1/hard/HRD003.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "HRD004",
+    "rel_path": "datasets/paper1/hard/HRD004.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "HRD005",
+    "rel_path": "datasets/paper1/hard/HRD005.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "HRD006",
+    "rel_path": "datasets/paper1/hard/HRD006.pdf",
+    "chunks": 5
+  },
+  {
+    "doc_id": "HRD007",
+    "rel_path": "datasets/paper1/hard/HRD007.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "HRD008",
+    "rel_path": "datasets/paper1/hard/HRD008.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "HRD009",
+    "rel_path": "datasets/paper1/hard/HRD009.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "HRD010",
+    "rel_path": "datasets/paper1/hard/HRD010.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "HRD011",
+    "rel_path": "datasets/paper1/hard/HRD011.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "HRD012",
+    "rel_path": "datasets/paper1/hard/HRD012.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "HRD013",
+    "rel_path": "datasets/paper1/hard/HRD013.pdf",
+    "chunks": 2
+  },
+  {
+    "doc_id": "POL001",
+    "rel_path": "datasets/paper1/policy/POL001.pdf",
+    "chunks": 6
+  },
+  {
+    "doc_id": "POL002",
+    "rel_path": "datasets/paper1/policy/POL002.pdf",
+    "chunks": 20
+  },
+  {
+    "doc_id": "POL003",
+    "rel_path": "datasets/paper1/policy/POL003.pdf",
+    "chunks": 3
+  },
+  {
+    "doc_id": "POL004",
+    "rel_path": "datasets/paper1/policy/POL004.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "POL005",
+    "rel_path": "datasets/paper1/policy/POL005.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "POL006",
+    "rel_path": "datasets/paper1/policy/POL006.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "POL007",
+    "rel_path": "datasets/paper1/policy/POL007.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "POL008",
+    "rel_path": "datasets/paper1/policy/POL008.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "POL009",
+    "rel_path": "datasets/paper1/policy/POL009.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "POL010",
+    "rel_path": "datasets/paper1/policy/POL010.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "POL011",
+    "rel_path": "datasets/paper1/policy/POL011.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "POL012",
+    "rel_path": "datasets/paper1/policy/POL012.pdf",
+    "chunks": 2
+  },
+  {
+    "doc_id": "POL013",
+    "rel_path": "datasets/paper1/policy/POL013.pdf",
+    "chunks": 8
+  },
+  {
+    "doc_id": "POL014",
+    "rel_path": "datasets/paper1/policy/POL014.pdf",
+    "chunks": 6
+  },
+  {
+    "doc_id": "POL015",
+    "rel_path": "datasets/paper1/policy/POL015.pdf",
+    "chunks": 6
+  },
+  {
+    "doc_id": "TEC001",
+    "rel_path": "datasets/paper1/technical/TEC001.pdf",
+    "chunks": 18
+  },
+  {
+    "doc_id": "TEC002",
+    "rel_path": "datasets/paper1/technical/TEC002.pdf",
+    "chunks": 3
+  },
+  {
+    "doc_id": "TEC003",
+    "rel_path": "datasets/paper1/technical/TEC003.pdf",
+    "chunks": 3
+  },
+  {
+    "doc_id": "TEC004",
+    "rel_path": "datasets/paper1/technical/TEC004.pdf",
+    "chunks": 2
+  },
+  {
+    "doc_id": "TEC005",
+    "rel_path": "datasets/paper1/technical/TEC005.pdf",
+    "chunks": 1
+  },
+  {
+    "doc_id": "TEC007",
+    "rel_path": "datasets/paper1/technical/TEC007.pdf",
+    "chunks": 3
+  },
+  {
+    "doc_id": "TEC008",
+    "rel_path": "datasets/paper1/technical/TEC008.pdf",
+    "chunks": 2
+  },
+  {
+    "doc_id": "TEC009",
+    "rel_path": "datasets/paper1/technical/TEC009.pdf",
+    "chunks": 5
+  },
+  {
+    "doc_id": "TEC010",
+    "rel_path": "datasets/paper1/technical/TEC010.pdf",
+    "chunks": 2
+  },
+  {
+    "doc_id": "TEC011",
+    "rel_path": "datasets/paper1/technical/TEC011.pdf",
+    "chunks": 3
+  },
+  {
+    "doc_id": "TEC012",
+    "rel_path": "datasets/paper1/technical/TEC012.pdf",
+    "chunks": 3
+  },
+  {
+    "doc_id": "TEC013",
+    "rel_path": "datasets/paper1/technical/TEC013.pdf",
+    "chunks": 2
+  },
+  {
+    "doc_id": "TEC014",
+    "rel_path": "datasets/paper1/technical/TEC014.pdf",
+    "chunks": 2
+  },
+  {
+    "doc_id": "TEC015",
+    "rel_path": "datasets/paper1/technical/TEC015.pdf",
+    "chunks": 1
+  }
+]
