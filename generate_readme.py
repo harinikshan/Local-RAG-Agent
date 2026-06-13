@@ -97,7 +97,7 @@ The system leverages:
 ---
 
 ## 🎥 Video Demo
-A video showcase demonstrating the RAG pipeline end-to-end (indexing, querying, comparative traces) is submitted alongside this repository.
+Watch the end-to-end RAG pipeline demonstration (indexing, querying, comparative traces) here: [DocuMind PhD RAG Demo](https://youtu.be/8afUIPWq1ew)
 
 ---
 
