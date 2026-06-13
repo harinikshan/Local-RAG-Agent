@@ -8,7 +8,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 MANIFEST_PATH = HERE / "sandbox" / "docmind_project" / "manifest.json"
 BASE_TRACES_PATH = HERE / "sandbox" / "docmind_project" / "base_traces.md"
-README_PATH = HERE / "sandbox" / "docmind_project" / "README.md"
+README_PATH = HERE / "README.md"
 
 
 def main():
@@ -48,7 +48,7 @@ Here are the five custom queries designed against the DocuMind PhD corpus. They 
 *   **Comparison Summary**:
     *   **State A (No Index)**: The agent fails to answer because it lacks access to local guides. It performs web searches but finds no correct scientific affiliation.
     *   **State B (Indexed)**: Retrieves the relevant companion guide chunks and identifies **Srisankari** from the **Department of Computer Science** at **Madurai Kamaraj University**.
-*   **Trace Detail**: See [query_1_comparison.md](traces/query_1_comparison.md).
+*   **Trace Detail**: See [query_1_comparison.md](sandbox/docmind_project/traces/query_1_comparison.md).
 
 ### Query 2: Fact Retrieval (System Config)
 *   **Question**: "What specific on-device embedding model is used by the DocuMind mobile application, and how is it integrated?"
@@ -56,7 +56,7 @@ Here are the five custom queries designed against the DocuMind PhD corpus. They 
 *   **Comparison Summary**:
     *   **State A (No Index)**: The agent has no knowledge of the custom app's configuration and abstains or fails to locate details online.
     *   **State B (Indexed)**: Correctly retrieves the user guide chunks specifying the **Qwen3 0.6B Embed** model integrated via the **Cactus SDK**.
-*   **Trace Detail**: See [query_2_comparison.md](traces/query_2_comparison.md).
+*   **Trace Detail**: See [query_2_comparison.md](sandbox/docmind_project/traces/query_2_comparison.md).
 
 ### Query 3: Semantic Recall (Formula)
 *   **Question**: "How is the utility score calculated by the policy controller in this research to determine the optimal configuration for chunking and workers?"
@@ -64,7 +64,7 @@ Here are the five custom queries designed against the DocuMind PhD corpus. They 
 *   **Comparison Summary**:
     *   **State A (No Index)**: Bypasses the vector database and fails to find any specific mathematical formula or local policy guidelines.
     *   **State B (Indexed)**: Recalls the exact utility score calculation based on the weighted sum of Accuracy, Throughput, and Resource overhead penalties.
-*   **Trace Detail**: See [query_3_comparison.md](traces/query_3_comparison.md).
+*   **Trace Detail**: See [query_3_comparison.md](sandbox/docmind_project/traces/query_3_comparison.md).
 
 ### Query 4: Semantic Recall (Mobile Trilemma)
 *   **Question**: "What three competing priorities form the difficult triad in on-device document processing on mobile platforms?"
@@ -72,7 +72,7 @@ Here are the five custom queries designed against the DocuMind PhD corpus. They 
 *   **Comparison Summary**:
     *   **State A (No Index)**: The agent has no access to the technical paper and gives a generic answer about standard web trilemmas.
     *   **State B (Indexed)**: Recalls the specific "difficult triad" parameters — **Accuracy, Latency, and Power/Memory efficiency** — under strict hardware constraint boundaries.
-*   **Trace Detail**: See [query_4_comparison.md](traces/query_4_comparison.md).
+*   **Trace Detail**: See [query_4_comparison.md](sandbox/docmind_project/traces/query_4_comparison.md).
 
 ### Query 5: Semantic Recall (Analogy)
 *   **Question**: "Explain the food preparation analogy used to describe the role of parallel worker allocation and chunking decisions."
@@ -80,7 +80,7 @@ Here are the five custom queries designed against the DocuMind PhD corpus. They 
 *   **Comparison Summary**:
     *   **State A (No Index)**: Lacks contextual awareness and cannot explain this unique food analogy.
     *   **State B (Indexed)**: Successfully retrieves chunks outlining the analogy, where parallel workers are compared to kitchen chefs, chunk sizes to meal prep stages, and scheduling controls to sous-chef coordination.
-*   **Trace Detail**: See [query_5_comparison.md](traces/query_5_comparison.md).
+*   **Trace Detail**: See [query_5_comparison.md](sandbox/docmind_project/traces/query_5_comparison.md).
 """
 
     # Assemble the final README.md content

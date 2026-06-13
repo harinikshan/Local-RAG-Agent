@@ -11,8 +11,7 @@ The system leverages:
 ---
 
 ## 🎥 Video Demo
-A video showcase demonstrating the RAG pipeline end-to-end (indexing, querying, comparative evaluation) is available here:
-👉 **[Watch the YouTube Demo Video](https://youtu.be/8afUIPWq1ew)**
+A video showcase demonstrating the RAG pipeline end-to-end (indexing, querying, comparative traces) is submitted alongside this repository.
 
 ---
 
@@ -101,7 +100,7 @@ Here are the five custom queries designed against the DocuMind PhD corpus. They 
 *   **Comparison Summary**:
     *   **State A (No Index)**: The agent fails to answer because it lacks access to local guides. It performs web searches but finds no correct scientific affiliation.
     *   **State B (Indexed)**: Retrieves the relevant companion guide chunks and identifies **Srisankari** from the **Department of Computer Science** at **Madurai Kamaraj University**.
-*   **Trace Detail**: See [query_1_comparison.md](traces/query_1_comparison.md).
+*   **Trace Detail**: See [query_1_comparison.md](sandbox/docmind_project/traces/query_1_comparison.md).
 
 ### Query 2: Fact Retrieval (System Config)
 *   **Question**: "What specific on-device embedding model is used by the DocuMind mobile application, and how is it integrated?"
@@ -109,7 +108,7 @@ Here are the five custom queries designed against the DocuMind PhD corpus. They 
 *   **Comparison Summary**:
     *   **State A (No Index)**: The agent has no knowledge of the custom app's configuration and abstains or fails to locate details online.
     *   **State B (Indexed)**: Correctly retrieves the user guide chunks specifying the **Qwen3 0.6B Embed** model integrated via the **Cactus SDK**.
-*   **Trace Detail**: See [query_2_comparison.md](traces/query_2_comparison.md).
+*   **Trace Detail**: See [query_2_comparison.md](sandbox/docmind_project/traces/query_2_comparison.md).
 
 ### Query 3: Semantic Recall (Formula)
 *   **Question**: "How is the utility score calculated by the policy controller in this research to determine the optimal configuration for chunking and workers?"
@@ -117,7 +116,7 @@ Here are the five custom queries designed against the DocuMind PhD corpus. They 
 *   **Comparison Summary**:
     *   **State A (No Index)**: Bypasses the vector database and fails to find any specific mathematical formula or local policy guidelines.
     *   **State B (Indexed)**: Recalls the exact utility score calculation based on the weighted sum of Accuracy, Throughput, and Resource overhead penalties.
-*   **Trace Detail**: See [query_3_comparison.md](traces/query_3_comparison.md).
+*   **Trace Detail**: See [query_3_comparison.md](sandbox/docmind_project/traces/query_3_comparison.md).
 
 ### Query 4: Semantic Recall (Mobile Trilemma)
 *   **Question**: "What three competing priorities form the difficult triad in on-device document processing on mobile platforms?"
@@ -125,7 +124,7 @@ Here are the five custom queries designed against the DocuMind PhD corpus. They 
 *   **Comparison Summary**:
     *   **State A (No Index)**: The agent has no access to the technical paper and gives a generic answer about standard web trilemmas.
     *   **State B (Indexed)**: Recalls the specific "difficult triad" parameters — **Accuracy, Latency, and Power/Memory efficiency** — under strict hardware constraint boundaries.
-*   **Trace Detail**: See [query_4_comparison.md](traces/query_4_comparison.md).
+*   **Trace Detail**: See [query_4_comparison.md](sandbox/docmind_project/traces/query_4_comparison.md).
 
 ### Query 5: Semantic Recall (Analogy)
 *   **Question**: "Explain the food preparation analogy used to describe the role of parallel worker allocation and chunking decisions."
@@ -133,7 +132,7 @@ Here are the five custom queries designed against the DocuMind PhD corpus. They 
 *   **Comparison Summary**:
     *   **State A (No Index)**: Lacks contextual awareness and cannot explain this unique food analogy.
     *   **State B (Indexed)**: Successfully retrieves chunks outlining the analogy, where parallel workers are compared to kitchen chefs, chunk sizes to meal prep stages, and scheduling controls to sous-chef coordination.
-*   **Trace Detail**: See [query_5_comparison.md](traces/query_5_comparison.md).
+*   **Trace Detail**: See [query_5_comparison.md](sandbox/docmind_project/traces/query_5_comparison.md).
 
 
 ---
@@ -141,247 +140,54 @@ Here are the five custom queries designed against the DocuMind PhD corpus. They 
 ## 📊 MCP Base Traces
 Below are the raw stdout traces of the eight core/base tools generated programmatically by `run_base_traces.py`:
 
-# MCP Base Traces
+Last login: Sat Jun 13 14:02:44 on ttys013
+cloudtrade@MacBook-Pro ~ % ollama pull nomic-embed-text
+pulling manifest 
+pulling 970aa74c0a90: 100% ▕██████████████████▏ 274 MB                         
+pulling c71d239df917: 100% ▕██████████████████▏  11 KB                         
+pulling ce4a164fc046: 100% ▕██████████████████▏   17 B                         
+pulling 31df23ea7daa: 100% ▕██████████████████▏  420 B                         
+verifying sha256 digest 
+writing manifest 
+success 
+cloudtrade@MacBook-Pro ~ % cd /Users/cloudtrade/S7code
+uv run agent7.py "What is the current time in Tokyo and Bangalore?"
 
-This file contains the execution traces for the eight core/base tools in the Session 7 MCP server.
 
-## Tool: `get_time`
-**Arguments**:
-```json
-{
-  "timezone": "Asia/Kolkata"
-}
-```
+══════════════════════════════════════════════════════════════════════════════
+run 6f07d594  ─  query: What is the current time in Tokyo and Bangalore?
+══════════════════════════════════════════════════════════════════════════════
+[06/13/26 14:19:37] INFO     Processing request of type            server.py:727
+                             ListToolsRequest                                   
+[mcp] loaded 11 tools: ['web_search', 'fetch_url', 'get_time', 'currency_convert', 'read_file', 'list_dir', 'create_file', 'update_file', 'edit_file', 'index_document', 'search_knowledge']
 
-**Result**:
-```json
-{
-  "iso": "2026-06-13T21:36:29.559685+05:30",
-  "human": "Saturday, 13 June 2026 21:36:29 IST",
-  "timezone": "Asia/Kolkata",
-  "offset_hours": 5.5
-}
-```
+─── iter 1 ─────────────────────────────────────────────
+[memory.read]   6 hits
+[perception]    ○ g:81f49843 — Get the current time in Tokyo
+[perception]    ○ g:6804c695 — Get the current time in Bangalore
+[percep
+<truncated 45216 bytes>
+c6c7 — Create a reminder for 1 May 2026 for mom's birthday
+[perception]    ○ g:a60632b7 — Create a reminder for 15 May 2026 for mom's birthday
+[perception]    ○ g:6c7b2fd9 — Confirm that both reminders have been set
+[decision]      TOOL_CALL: create_file({"content": "Reminder: Mom's birthday is on 15 May 2026. Set reminder for 1 May 2026.", "path": "reminder_2026-05-01_mom)
+[06/13/26 14:41:12] INFO     Processing request of type CallToolRequest                                                                    server.py:727
+[action]        → {   "ok": true,   "path": "reminder_2026-05-01_moms_birthday.txt",   "size_bytes": 72 }
 
----
+─── iter 3 ─────────────────────────────────────────────
+[memory.read]   8 hits
+[perception]    ✓ g:cbc44ea9 — Save mom's birthday into memory as 15 May 2026
+[perception]    ✓ g:e9c7c6c7 — Create a reminder for 1 May 2026 for mom's birthday
+[perception]    ○ g:a60632b7 — Create a reminder for 15 May 2026 for mom's birthday
+[perception]    ○ g:6c7b2fd9 — Confirm that both reminders have been set
+[decision]      TOOL_CALL: create_file({"path": "reminder_2026-05-15_moms_birthday.txt", "content": "Reminder: Today is Mom's birthday - 15 May 2026. Don't for)
+[06/13/26 14:41:15] INFO     Processing request of type CallToolRequest                                                                    server.py:727
+[action]        → {   "ok": true,   "path": "reminder_2026-05-15_moms_birthday.txt",   "size_bytes": 91 }
 
-## Tool: `create_file`
-**Arguments**:
-```json
-{
-  "path": "trace_test.txt",
-  "content": "Initial content for base trace tests."
-}
-```
+─── iter 4 ─────────────────────────────────────────────
+[memory.read]   8 hits
+[perception]    ✓ g:cbc44ea9 — Save mom's birthday into memory as 15 May 2026
+[perception]    ✓ g:e9c7c6c7 — Create a remi
+<truncated 663148 bytes>
 
-**Result**:
-```json
-{
-  "ok": true,
-  "path": "trace_test.txt",
-  "size_bytes": 37
-}
-```
-
----
-
-## Tool: `read_file`
-**Arguments**:
-```json
-{
-  "path": "trace_test.txt"
-}
-```
-
-**Result**:
-```json
-{
-  "path": "trace_test.txt",
-  "size_bytes": 37,
-  "content": "Initial content for base trace tests.",
-  "encoding": "utf-8"
-}
-```
-
----
-
-## Tool: `update_file`
-**Arguments**:
-```json
-{
-  "path": "trace_test.txt",
-  "content": "Updated content for base trace tests. Word1 Word2."
-}
-```
-
-**Result**:
-```json
-{
-  "ok": true,
-  "path": "trace_test.txt",
-  "size_bytes": 50
-}
-```
-
----
-
-## Tool: `edit_file`
-**Arguments**:
-```json
-{
-  "path": "trace_test.txt",
-  "find": "Word1",
-  "replace": "Replacement1"
-}
-```
-
-**Result**:
-```json
-{
-  "ok": true,
-  "path": "trace_test.txt",
-  "replacements": 1,
-  "size_bytes": 57
-}
-```
-
----
-
-## Tool: `list_dir`
-**Arguments**:
-```json
-{
-  "path": "."
-}
-```
-
-**Result**:
-```json
-{
-  "path": ".",
-  "count": 9,
-  "names": [
-    "docmind_project",
-    "mom_birthday.txt",
-    "moms_birthday.txt",
-    "papers",
-    "reminder_2026-05-01_moms_birthday.txt",
-    "reminder_2026-05-15_moms_birthday.txt",
-    "reminder_2weeks_before_mom_birthday.txt",
-    "reminder_mom_birthday.txt",
-    "trace_test.txt"
-  ],
-  "entries": [
-    {
-      "name": "docmind_project",
-      "type": "dir",
-      "size_bytes": 0
-    },
-    {
-      "name": "mom_birthday.txt",
-      "type": "file",
-      "size_bytes": 33
-    },
-    {
-      "name": "moms_birthday.txt",
-      "type": "file",
-      "size_bytes": 30
-    },
-    {
-      "name": "papers",
-      "type": "dir",
-      "size_bytes": 0
-    },
-    {
-      "name": "reminder_2026-05-01_moms_birthday.txt",
-      "type": "file",
-      "size_bytes": 72
-    },
-    {
-      "name": "reminder_2026-05-15_moms_birthday.txt",
-      "type": "file",
-      "size_bytes": 91
-    },
-    {
-      "name": "reminder_2weeks_before_mom_birthday.txt",
-      "type": "file",
-      "size_bytes": 73
-    },
-    {
-      "name": "reminder_mom_birthday.txt",
-      "type": "file",
-      "size_bytes": 47
-    },
-    {
-      "name": "trace_test.txt",
-      "type": "file",
-      "size_bytes": 57
-    }
-  ]
-}
-```
-
----
-
-## Tool: `index_document`
-**Arguments**:
-```json
-{
-  "path": "trace_test.txt",
-  "chunk_size": 10,
-  "overlap": 2
-}
-```
-
-**Result**:
-```json
-{
-  "path": "trace_test.txt",
-  "source": "sandbox:trace_test.txt",
-  "chunks_indexed": 1,
-  "chunk_size": 10,
-  "overlap": 2
-}
-```
-
----
-
-## Tool: `search_knowledge`
-**Arguments**:
-```json
-{
-  "query": "Replacement1",
-  "k": 3
-}
-```
-
-**Result**:
-```json
-[
-  {
-    "id": "mem:34c9803d",
-    "descriptor": "[sandbox:trace_test.txt chunk 1/1] Updated content for base trace tests. Replacement1 Word2.",
-    "source": "sandbox:trace_test.txt",
-    "chunk": "Updated content for base trace tests. Replacement1 Word2.",
-    "metadata": {
-      "chunk_index": 0,
-      "total_chunks": 1,
-      "source": "sandbox:trace_test.txt"
-    }
-  },
-  {
-    "id": "mem:34c9803d",
-    "descriptor": "[sandbox:trace_test.txt chunk 1/1] Updated content for base trace tests. Replacement1 Word2.",
-    "source": "sandbox:trace_test.txt",
-    "chunk": "Updated content for base trace tests. Replacement1 Word2.",
-    "metadata": {
-      "chunk_index": 0,
-      "total_chunks": 1,
-      "source": "sandbox:trace_test.txt"
-    }
-  }
-]
-```
-
----
-
+NOTE: The output was truncated because it was too long. Use a more targeted query or a smaller range to get the information you need.
